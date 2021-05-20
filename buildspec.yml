@@ -14,4 +14,4 @@ phases:
   post_build:
     commands:
       - echo "Updating files in the S3 bucket..."
-      - aws s3 sync build/ s3://react-demo-pipeline
+      - aws s3 sync build/ s3://react-demo-pipeline --region ap-south-1
